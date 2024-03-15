@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="img/icon.png" type="image/x-icon" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pandarando</title>
+  </head>
+  <body onload="renderMeals(), renderTotalPrice(), showBasketBtn()">
+    <header>
+      <div class="header-container-left">
+        <img class="nav-left-icon" src="img/nav-left.png" alt="" />
+        <img src="img/icon.png" alt="" />
+        <h2>Pandarando</h2>
+      </div>
+      <div><h3 id="menu-footer">Speisekarte</h3></div>
+      <nav>
+        <img src="img/deutschland.png" alt="" />
+        <img src="img/nav.png" alt="" />
+      </nav>
+    </header>
+    <div class="main-container">
+      <div class="left-container2" id="leftContainer2">
+        <div class="left-container">
+          <div>
+            <img src="img/pizza.jpg" alt="" />
+          </div>
+          <div class="info-container">
+            <div class="restaurant-container">
+              <img class="icon-img" src="img/panda.png" alt="" />
+              <h1>Panda Pizza</h1>
+              <div class="rating-container">
+                <img src="img/rating.png" alt="" />
+                <h4 id="ratings">2034 Bewertungen</h4>
+              </div>
+            </div>
+            <div class="info-like-container">
+              <img src="img/info.png" alt="" />
+              <img src="img/like.png" alt="" />
+            </div>
+          </div>
+          <div class="order-icons">
+            <img src="img/einkauf.png" alt="" />
+            Min. 9,00 €
+            <img src="img/lieferkosten.png" alt="" />
+            1,00€
+          </div>
+        </div>
+        <div id="content">
+          <h3>Beliebt</h3>
+        </div>
+        <div id="basketBtnContainer" class="d-none">
+          <button
+            onclick="openBasket()"
+            id="basketBtn"
+            class="basketBtn"
+          >
+            Warenkorb
+          </button>
+        </div>
+      </div>
+      <div class="basket boxStyle" id="basket">
+        <div class="sticky">
+          <div class="closeBasketImgContainer">
+            <img
+              src="img/close.png"
+              id="closeBasketImg"
+              onclick="closeBasket()"
+              class="d-none"
+            />
+          </div>
+          <div class="basket-container">
+            <h2>Warenkorb</h2>
+          </div>
+          <div class="take-away-deliver-container">
+            <div
+              onclick="deliver()"
+              id="deliver"
+              class="deliver-container style-deliver-take-away-container"
+            >
+              <div><img src="img/lieferkosten.png" alt="" /></div>
+              <div>
+                <h4>Lieferung</h4>
+                30-45 min
+              </div>
+            </div>
+            <div onclick="takeAway()" class="take-away-container" id="takeAway">
+              <div><img src="img/einkauf.png" alt="" /></div>
+              <div>
+                <h4>Abholung</h4>
+                20 min
+              </div>
+            </div>
+          </div>
+          <div id="orderedMeals"></div>
+          <div class="price-container" id="priceContainer"></div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

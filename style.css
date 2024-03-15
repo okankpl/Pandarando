@@ -1,0 +1,410 @@
+body {
+  font-size: 16px;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+
+h2,
+h3 {
+  color: #ff8000;
+}
+
+.header-container-left {
+  display: flex;
+  align-items: center;
+}
+
+.header-container-left img {
+  height: 30px;
+}
+.nav-left-icon {
+  height: 15px !important;
+}
+
+header {
+  margin-top: 10px;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav img {
+  height: 30px;
+}
+
+nav {
+  display: flex;
+  gap: 40px;
+}
+
+.main-container {
+  display: flex;
+  flex: 1;
+}
+.left-container {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.left-container2 {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.left-container img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+.restaurant-container img {
+  height: 70px;
+  width: 70px;
+}
+.restaurant-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.info-like-container img {
+  height: 35px;
+  width: 35px;
+}
+.icon-img {
+  position: absolute;
+  top: 350px;
+  background-color: rgb(241, 240, 240);
+  border-radius: 5px;
+}
+
+.info-like-container {
+  display: flex;
+  gap: 20px;
+  margin-right: 20px;
+}
+
+.info-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.rating-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.rating-container h4 {
+  color: black;
+  text-decoration: underline;
+}
+
+.rating-container img {
+  height: 40px !important;
+  width: 120px;
+}
+
+.basket {
+  width: 400px;
+}
+
+h1 {
+  margin-top: 5px;
+  margin-bottom: 3px;
+}
+.order-icons {
+  display: flex;
+  margin-left: 20px;
+  gap: 5px;
+  align-items: center;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+.order-icons img {
+  height: 20px;
+  width: 20px;
+}
+
+#content h3,
+h4 {
+  color: black;
+  margin-bottom: 10px;
+  margin-left: 20px;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+#content {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.meals {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border: 1.5px solid rgb(171, 171, 171);
+  width: 85%;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.meals h3 {
+  margin-bottom: 10px;
+}
+
+.meals img {
+  height: 30px;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+.meals img:hover {
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+  transition: transform 0.1s ease-in-out;
+}
+
+.meal {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.meal h4 {
+  color: rgb(85, 85, 85);
+}
+.basket-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.basket h2 {
+  color: black;
+}
+
+#closeBasketImg {
+  height: 25px;
+}
+.closeBasketImgContainer {
+  margin-left: auto;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#closeBasketImg {
+  cursor: pointer;
+}
+
+.take-away-deliver-container img {
+  height: 20px;
+  width: 20px;
+}
+.take-away-deliver-container {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  background-color: #efedea;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 20px;
+}
+.sticky {
+  position: sticky;
+  top: 0;
+}
+.deliver-container,
+.take-away-container {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+  border-radius: 20px;
+  padding: 8px;
+}
+.deliver-container h4,
+.take-away-container h4 {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin: 0 !important;
+  margin-left: 0px !important;
+}
+.deliver-container {
+  width: 100%;
+}
+.take-away-container {
+  width: 100%;
+}
+
+.style-deliver-take-away-container {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  background-color: white;
+}
+.deliver-container:hover,
+.take-away-container:hover {
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.ordered-meal {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  flex-direction: column;
+}
+.number-container {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.number-container img {
+  height: 30px;
+  width: 30px;
+}
+
+.number-container h4 {
+  margin-left: 0;
+}
+
+.number-container img:hover {
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+}
+.price {
+  margin-top: 40px;
+  display: flex;
+  margin-left: 20px;
+  margin-right: 20px;
+  justify-content: space-between;
+}
+
+.pay-btn {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 25px;
+}
+.pay-btn button {
+  width: 250px;
+  height: 50px;
+  border-radius: 20px;
+  border: none;
+  background-color: #ff8000;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 25px;
+}
+.pay-btn button:hover {
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transform: scale(1.02);
+  transition: transform 0.1s ease-in-out;
+}
+.emptyBasket {
+  text-align: center;
+  margin-top: 50px;
+}
+.emptyBasket h3 {
+  color: black;
+}
+.emptyBasket img {
+  height: 30px;
+}
+
+.d-none {
+  display: none;
+}
+
+#basketBtnContainer {
+  margin: auto;
+  position: sticky;
+  display: flex;
+  justify-content: center;
+  bottom: 10px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.basketBtn {
+  width: 400px;
+  height: 50px;
+  border-radius: 20px;
+  border: none;
+  background-color: #ff8000;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #ff8000;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-track {
+  background-color: #eee;
+  border-radius: 10px;
+}
+.styleResponsiveBasket {
+  height: 100vh !important;
+  margin: auto;
+}
+.boxStyle {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 860px) {
+  #basketBtn {
+    display: block;
+  }
+  #leftContainer2 {
+    width: 100vw;
+  }
+}
+
+@media (max-width: 425px) {
+  #menu-footer {
+    display: none;
+  }
+  #ratings {
+    font-size: 12px !important;
+  }
+  .basketBtn {
+    width: 280px;
+  }
+  .body {
+    width: 100%;
+    height: 100%;
+  }
+  .left-container img {
+    max-width: 100%;
+    height: auto;
+  }
+  .icon-img {
+    top: 260px;
+  }
+}
